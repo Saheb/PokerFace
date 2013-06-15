@@ -177,7 +177,7 @@
             }
             else
             {
-                document.write(card_score[String(last_bet.Card1)]);
+                //document.write(card_score[String(last_bet.Card1)]);
                 if(card_score[current_bet.Card1] > card_score[last_bet.Card1])
                     return true;
                 else
