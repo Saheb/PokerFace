@@ -138,11 +138,12 @@ if (mysqli_connect_errno($con1))
       <div class="row-fluid">
         <div class="span5" style="padding-left:80px">
           <div class="well sidebar-nav">
-            <h1>Server Name :</h1><br>
+            <h1> Admin's Game </h1><br>
+	<!--
             <b class="admin1">Admin</b>
             <b class="ip1">IP</b><br>
             <b class="admin2"><?php echo $_GET["name"]; ?></b>
-            <b class="ip2">10.100.93.27</b><br><br>
+            <b class="ip2">10.100.93.27</b><br><br>-->
           </div>
        </div>
        <div class="span5" style="padding-left:80px">
@@ -175,20 +176,18 @@ if (mysqli_connect_errno($con1))
 
     <div class="container-fluid">
       <div class="row-fluid">
-        <div class="span4" style="padding-left:80px">
+        <div class="span3" style="padding-left:80px">
           <div class="well sidebar-nav">
             <b style="font-size: 25px">Players</b>
-            <b style="font-size: 25px;padding-left: 80px">Ready</b><br><br>
+		<br><br>
             <div id="users">
 
             </div>
           </div>
       </div>
-      <div class="span6" style="padding-left:190px;length:300px">
+      <div class="span5" style="padding-left:80px;length:300px">
           <div class="well sidebar-nav">
-            <h2>Chat Box</h2>
-            <textarea id='log' name='log' readonly='readonly'>Chat Module will come soon.</textarea><br/>
-            <input type="text" id="message" name="message" style="width:200px;" />
+            <h2>Chat Module will come soon :)</h2>
           </div>
       </div>
     </div>
@@ -222,3 +221,4 @@ if (mysqli_connect_errno($con1))
 </html>
 
 </html>
+

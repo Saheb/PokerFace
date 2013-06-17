@@ -137,7 +137,7 @@
             Enter You Name: <input type="text" name="name" id='name_create'><br>
             <input type="submit" value="Create Server" class="btn btn-large btn-success" id='name'></a>
           </form>
-          <form action="http://127.0.0.1/public/joinServer.php" method="get" >
+          <form action="http://127.0.0.1/PokerFace/public/joinServer.php" method="get" >
             Enter You Name: <input type="text" name="name" class='name' id='name_join'><br>
 	         <input type="submit" value="Join Server" class="btn btn-large btn-success" id='join' ></a>
          </from>

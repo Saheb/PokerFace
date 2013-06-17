@@ -147,7 +147,7 @@
             
             <div class="span12" style="margin:0;">
             <div class="span4" style="">
-            <img src="neel.PNG" style="margin:0; padding:0; float:right;" alt="neel's pic"/></div>
+            <img src="neel.png" style="margin:0; padding:0; float:right;" alt="neel's pic"/></div>
             <div class="span8" style="">
                 <a class="" style="font-family: 'Overlock', sans-serif; font-size: 2em;">Neel Shah</a><br/>
 				<p style=""margin:0;>
@@ -215,10 +215,6 @@
       
 	  
 	  
-      <hr>
-		<div class="footer">
-        <p>&copy; Web Programming Course Project 2013</p>
-		</div>      
       <hr>
 
       
