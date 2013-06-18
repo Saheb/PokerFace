@@ -539,6 +539,7 @@ $(document).ready(function()
                 </div>
                 <br>
         <div class="row">
+		<br>
             <input type="radio" value="Straight Flush" name="Hand" id="rf"/> Straight Flush <br/>
             <input type="radio" value="Four of a Kind" name="Hand" id="fk"/> Four of a Kind <br/>
             <input type="radio" value="Full House" name="Hand" id="fh"/> Full House  <br/>
@@ -546,6 +547,7 @@ $(document).ready(function()
             <input type="radio" value="Straight" name="Hand" id="st"/> Straight <br/>
             <input type="radio" value="Three of a Kind" name="Hand" id="trio"/> Trio <br/>
             <input type="radio" value="Two Pairs" name="Hand" id="tp"/> Two Pairs <br/>
+	    <input type="radio" value="Pair" name="Hand" id="p"/> Pair <br/>
             <input type="radio" value="High Card" name="Hand" id="hc"/> High Card <br/>
         </div>
         <br>
@@ -625,8 +627,7 @@ $(document).ready(function()
             </div>
             <div class="row">
             <h2>Chat Window</h2>
-            <div id="chat">
-                <p>hello</p>
+            <div>
             </div>
             </div>
         </div>
