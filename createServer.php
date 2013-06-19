@@ -138,7 +138,7 @@ if (mysqli_connect_errno($con1))
       <div class="row-fluid">
         <div class="span5" style="padding-left:80px">
           <div class="well sidebar-nav">
-            <h1> Admin's Game </h1><br>
+            <h1> <?php echo $_GET["name"]; ?>'s Game </h1><br>
 	<!--
             <b class="admin1">Admin</b>
             <b class="ip1">IP</b><br>

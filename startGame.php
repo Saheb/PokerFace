@@ -99,7 +99,7 @@
         "Three of a Kind"    :  4,
         "Straight"        :  5,
         "Two Pairs"        :  3,
-        "Pairs"           :  2,
+        "Pair"           :  2,
         "High Card"      :  1,
         "NA"            :0
         };
@@ -203,7 +203,7 @@
             else 
                 return false;
         }
-        else if (last_bet.Hand=="Pairs")
+        else if (last_bet.Hand=="Pair")
         {
             if(card_count[last_bet.Card1]>=2)
                 return true;
@@ -695,7 +695,7 @@ $(document).ready(function(){
         </div>
     </div>
         <div class="span6" id="table" style="width:500px; height:500px;">
-            <Iframe src="table.php" width="725px" height="700px" scrolling="no"></Iframe>
+            <Iframe src="table.php" width="725px" height="700px" scrolling="no" frameborder="0"></Iframe>
         </div>
         <div class="span2 offset2">
             <div class=""row id="last_bet_static">
