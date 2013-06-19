@@ -403,13 +403,30 @@ $(document).ready(function()
                 //el.append(card_count['K']);
         }
             //showHand(total_hand);
-            
-	
+       
+	function allthecards()
+        {
+            //document.write("hr");
+            var server_id = <?php echo $idServe;?>;
+            var player_id = <?php echo $id;?>;
 
+            var feedback = $.ajax({
+            type: "POST",
+            url: "showCards.php",
+            data : {ser:String(server_id), per:String(player_id)},
+            async: false
+            }).responseText;
+
+            var g = $.parseJSON(feedback);
+            //document.write(g[0]);
+            return g;
+        }
+            
         $("#cards").click(function(event)
         {
 
-            var cards_id = <?php echo json_encode($cards);?>;
+            var cards_id = allthecards();
+            //var cards_id = <?php echo json_encode($cards);?>;
             
             var hand_id = convert2hand(cards_id);
 
