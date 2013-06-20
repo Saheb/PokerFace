@@ -6,13 +6,14 @@ $con=mysqli_connect("127.0.0.1:3306","root","abc","my_db");
         echo "Failed to connect to MySQL: " . mysqli_connect_error();
     }
 
-$result = mysqli_query($con, "SELECT Players FROM my_db.servers");
+$result = mysqli_query($con, "SELECT Players,ID FROM my_db.servers");
 while($row=mysqli_fetch_array($result))
 {
-    $players = $row['Players'];
+    $players = $row['Players']; 
+    $id = $row['ID'];
 }
 
-$result = mysqli_query($con, "SELECT Name FROM my_db.players WHERE Group_ID=224");
+$result = mysqli_query($con, "SELECT Name FROM my_db.players WHERE Group_ID= $id ");
 $out = array();
 while($row=mysqli_fetch_array($result))
 {
@@ -34,7 +35,7 @@ while($row=mysqli_fetch_array($result))
     var cornerSize = new Size(20, 20);
     var table = new Path.Circle(center,300);
         table.fillColor = 'green';
-    var num_of_players = 5;
+    var num_of_players = <?php echo $players;?>;//5;
     var del = 360/num_of_players;
     var myCircle = new Array();
     var dealer = new Rectangle((start.x+end.x)/2 -160,(start.y+end.y)/2,20,25);
@@ -44,8 +45,8 @@ while($row=mysqli_fetch_array($result))
         player.fillColor='black';
     var po = new Point((start.x+end.x)/2,start.y);
     var vec = po - dealer.point;
-    var player_names = ["Player 1","Player 2","Player 3","Player 4","Player 5","Player 6","Player 7","Player 8","Player 9","Player 10"];//from database
-    //var player_names = <?php echo json_encode($out);?>;
+    //var player_names = ["Player 1","Player 2","Player 3","Player 4","Player 5","Player 6","Player 7","Player 8","Player 9","Player 10"];//from database
+    var player_names = <?php echo json_encode($out);?>;
     for (var i = 0; i < num_of_players; i++) 
         {  
             temp = new Point(vec.x+shift_x,vec.y+shift_y);
