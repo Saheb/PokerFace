@@ -123,7 +123,7 @@ mysqli_query($con, "UPDATE my_db.players SET Group_ID=$idServer where ID=$idPlay
         data : {neel:String(id)},
         async: false
     }).success(function(){
-        setTimeout(function(){get_info();}, 100000);
+        setTimeout(function(){get_info();}, 1000);
     }).responseText;
 
     var divi = document.getElementById('users');
