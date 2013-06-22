@@ -291,11 +291,13 @@ function get_chance(){
     }).responseText;
 
     if(feedback == 1){
+	document.getElementById('buttons').innerHTML = '';
         document.getElementById('bet').style.visibility = 'visible';
         document.getElementById('challenge').style.visibility = 'visible';
     } else {
         document.getElementById('bet').style.visibility = 'hidden';
         document.getElementById('challenge').style.visibility = 'hidden';
+	document.getElementById('buttons').innerHTML = 'Wait for your chance!';
     }
 }
 
@@ -692,6 +694,8 @@ $(document).ready(function(){
             <br>
             <a class="btn btn-large btn-success" id="bet"> Bet </a>
             <a class="btn btn-large btn-success" id="challenge"> Challenge </a>
+            <div id = 'buttons'>
+	    </div>
         </div>
     </div>
         <div class="span6" id="table" style="width:500px; height:500px;">
