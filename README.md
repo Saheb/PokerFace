@@ -5,7 +5,7 @@ Steps to get the code running:
 
 1) Clone PokerFace to your htdocs folder.
 
-2) Download sql file from this link - https://www.dropbox.com/s/qc8433fcw1cakk5/my_db%281%29.sql
+2) Download sql file from this link - https://www.dropbox.com/s/as5ho62nsgohmmw/my_db.sql
 
 3) Add this sql database to your local sever as 'my_db'
 
